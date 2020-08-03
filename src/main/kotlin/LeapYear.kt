@@ -1,5 +1,5 @@
 class LeapYear {
-    fun checks(year: Int): Boolean {
+    fun check(year: Int): Boolean {
         return false
     }
 }

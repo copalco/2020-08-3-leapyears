@@ -7,6 +7,6 @@ class LeapYearTest {
     private val leapYear: LeapYear = LeapYear()
 
     @Test fun `Year is not leap`() {
-        assertThat(leapYear.checks(1), equalTo(false))
+        assertThat(leapYear.check(1), equalTo(false))
     }
 }
