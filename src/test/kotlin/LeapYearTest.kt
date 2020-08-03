@@ -1,8 +1,12 @@
-import org.junit.Test
+import com.natpryce.hamkrest.assertion.assertThat
+import com.natpryce.hamkrest.equalTo
+import org.junit.jupiter.api.Test
 
 class LeapYearTest {
 
-    @Test fun `Not a leap year`() {
-        LeapYear.check(1)
+    private val leapYear: LeapYear = LeapYear()
+
+    @Test fun `Year is not leap`() {
+        assertThat(leapYear.checks(1), equalTo(false))
     }
 }
