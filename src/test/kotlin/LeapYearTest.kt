@@ -9,4 +9,8 @@ class LeapYearTest {
     @Test fun `Year is not leap`() {
         assertThat(leapYear.check(1), equalTo(false))
     }
+
+    @Test fun `Fourth year is leap`() {
+        assertThat(leapYear.check(4), equalTo(true))
+    }
 }
