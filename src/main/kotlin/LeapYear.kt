@@ -1,6 +1,6 @@
 class LeapYear {
     fun check(year: Int): Boolean {
-        if (year == 4) {
+        if (year % 4 == 0) {
             return true
         }
         return false

@@ -13,4 +13,10 @@ class LeapYearTest {
     @Test fun `Fourth year is leap`() {
         assertThat(leapYear.check(4), equalTo(true))
     }
+
+    @Test fun `All multiple of four years are leap`() {
+        assertThat(leapYear.check(8), equalTo(true))
+        assertThat(leapYear.check(24), equalTo(true))
+        assertThat(leapYear.check(2004), equalTo(true))
+    }
 }
