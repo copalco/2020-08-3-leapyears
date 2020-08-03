@@ -24,4 +24,9 @@ class LeapYearTest {
         assertThat(leapYear.check(100), equalTo(false))
         assertThat(leapYear.check(1700), equalTo(false))
     }
+
+    @Test fun `Years divisible by four hundred are leap`() {
+        assertThat(leapYear.check(400), equalTo(true))
+        assertThat(leapYear.check(1600), equalTo(true))
+    }
 }
